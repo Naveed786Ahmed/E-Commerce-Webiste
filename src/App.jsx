@@ -1,12 +1,11 @@
-import React from 'react';
-import Clothes from './components/Clothes';
+import './App.css'
 
 function App() {
   return (
-    <div>
-      <Clothes />
-    </div>
-  );
+    <>
+      <h1>Hello World</h1>
+    </>
+  )
 }
 
 export default App;
