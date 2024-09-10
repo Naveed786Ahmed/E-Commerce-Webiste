@@ -1,12 +1,12 @@
-import './App.css'
-
+import React from 'react';
+import Clothes from './components/Clothes';
+import './App.css';
 function App() {
-
   return (
-    <>
-      <h1>Hello World</h1>
-    </>
-  )
+    <div className="App">
+      <Clothes />
+    </div>
+  );
 }
 
-export default App
+export default App;
