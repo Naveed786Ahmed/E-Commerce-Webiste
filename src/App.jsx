@@ -1,5 +1,6 @@
 import './App.css'
 import Clothes from './components/Clothes';
+import Footer from './components/Footer';
 import { HeroSec } from './components/HeroSec';
 
 
@@ -8,7 +9,7 @@ function App() {
     <>
       <Clothes/>
       <HeroSec/>
-      
+      <Footer/>
     </>
   )
 }
