@@ -1,9 +1,13 @@
 import './App.css'
+import Clothes from './components/Clothes';
+import { HeroSec } from './components/HeroSec';
+
 
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
+      <Clothes/>
+      <HeroSec/>
     </>
   )
 }
