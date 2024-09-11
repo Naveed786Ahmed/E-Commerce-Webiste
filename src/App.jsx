@@ -1,12 +1,12 @@
-import './App.css'
-import { HeroSec } from './components/HeroSec'
-function App() {
+import React from 'react';
+import Clothes from './components/Clothes';
 
+function App() {
   return (
-    <>
-  <HeroSec/>
-    </>
-  )
+    <div>
+      <Clothes />
+    </div>
+  );
 }
 
-export default App
+export default App;
