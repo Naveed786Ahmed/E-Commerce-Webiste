@@ -8,3 +8,101 @@ body {
     max-width: 100%;
     height: auto;
   }
+
+ /* Ensure slider takes full width and adapts to screen size */
+.slider {
+  position: relative;
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the image to fill the slider area */
+.slider-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire area */
+  display: block;
+}
+
+/* Buttons for navigation */
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.slider-button.left {
+  left: 10px;
+}
+
+.slider-button.right {
+  right: 10px;
+}
+
+/* Remove border and curve from buttons */
+.slider-button:focus {
+  outline: none;
+}
+
+/* Ensure buttons don’t have rounded edges */
+.slider-button {
+  border-radius: 0;
+}
+
+/* Hover effect for buttons */
+.slider-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/* index.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  background-color: #333; /* Dark background similar to the image */
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  background-color: #333; /* Ensuring background matches the overall theme */
+}
+
+.hashtag {
+  font-size: 64px;
+  font-weight: bold;
+  padding: 20px;
+  border: 3px solid white;
+  border-radius: 90px;
+  padding: 20px 40px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 24px;
+  line-height: 1.5;
+  max-width: 80%;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 28px;
+}
